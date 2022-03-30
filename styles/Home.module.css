@@ -29,8 +29,12 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #FF0000;
   text-decoration: none;
+}
+
+.wordEmphasis {
+  color: #FF0000;
 }
 
 .title a:hover,
@@ -43,6 +47,10 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+}
+
+.title h1 {
+  flexDirection: row;
 }
 
 .title,

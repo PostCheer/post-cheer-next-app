@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-postcheernextapp-dev-212352-authRole",
+            "UnauthRoleArn": "arn:aws:iam::497313849042:role/amplify-postcheernextapp-dev-212352-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::497313849042:role/amplify-postcheernextapp-dev-212352-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-postcheernextapp-dev-212352-deployment",
+            "UnauthRoleName": "amplify-postcheernextapp-dev-212352-unauthRole",
+            "StackName": "amplify-postcheernextapp-dev-212352",
+            "StackId": "arn:aws:cloudformation:us-east-1:497313849042:stack/amplify-postcheernextapp-dev-212352/10fd52c0-afc8-11ec-8b35-0a0dd0fe89fb",
+            "AmplifyAppId": "d24h0wrwiivre8"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d24h0wrwiivre8",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}

@@ -20,8 +20,8 @@ export default function Home() {
         </p>
         <h2 className={styles.subtitle}>About Us</h2>
         <p2 className={styles.description}>
-          Hi, I'm Sam Henderson, and I'm the creator and currently only contributor of this project. 
-          I'm currently a CS student at Georgia Tech trying to help people make connections with 
+          Hi, I&apos;m Sam Henderson, and I&apos;m the creator and currently only contributor of this project. 
+          I&apos;m currently a CS student at Georgia Tech trying to help people make connections with 
           the people you appreciate by making it easy to send thoughtful individualized post cards.
         </p2>
 

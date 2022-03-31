@@ -11,12 +11,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <h1 className={styles.title}>
-            Welcome to <a href="https://www.postcheer.com">Post Cheer</a>!
-          </h1>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://www.postcheer.com">Post Cheer</a>!
+        </h1>
         <p className={styles.description}>
-          Get started by editing
+          We strive to help you connect with the people you appreciate by allowing you to send individualized
+           post cards with a few clicks.
         </p>
+        <h2 className={styles.subtitle}>About Us</h2>
+        <p2 className={styles.description}>
+          Hi, I'm Sam Henderson, and I'm the creator and currently only contributor of this project. 
+          I'm currently a CS student at Georgia Tech trying to help people make connections with 
+          the people you appreciate by making it easy to send thoughtful individualized post cards.
+        </p2>
+
+        <h2 className={styles.subtitle}>Contact Us</h2>
+        <p2 className={styles.description}>sam@postcheer.com</p2>
       </main>
     </div>
   )

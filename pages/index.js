@@ -20,9 +20,10 @@ export default function Home() {
         </p>
         <h2 className={styles.subtitle}>About Us</h2>
         <p2 className={styles.description}>
-          Hi, I&apos;m Sam Henderson, and I&apos;m the creator and currently only contributor of this project. 
+          Hi, I&apos;m Sam Henderson, and I&apos;m the creator of PostCheer.com. 
           I&apos;m currently a CS student at Georgia Tech trying to help people make connections with 
-          the people you appreciate by making it easy to send thoughtful individualized post cards.
+          the people you appreciate by making it easy to send thoughtful individualized post cards with a
+          few easy clicks.
         </p2>
 
         <h2 className={styles.subtitle}>Contact Us</h2>

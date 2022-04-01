@@ -16,13 +16,13 @@ export default function Home() {
         </h1>
         <p className={styles.description}>
           We strive to help you connect with the people you appreciate by allowing you to send individualized
-           post cards with a few clicks.
+           postcards with a few clicks.
         </p>
         <h2 className={styles.subtitle}>About Us</h2>
         <p2 className={styles.description}>
           Hi, I&apos;m Sam Henderson, and I&apos;m the creator of PostCheer.com. 
           I&apos;m currently a CS student at Georgia Tech trying to help people make connections with 
-          the people you appreciate by making it easy to send thoughtful individualized post cards with a
+          the people you appreciate by making it easy to send thoughtful individualized postcards with a
           few easy clicks.
         </p2>
 

@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
         <p className={styles.description}>
           We strive to help you connect with the people you appreciate by allowing you to send individualized
-           postcards with a few clicks.
+           postcards with a few clicks. We are currently working on bringing this experience to life.
         </p>
         <h2 className={styles.subtitle}>About Us</h2>
         <p2 className={styles.description}>

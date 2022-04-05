@@ -1,5 +1,5 @@
 ## Post Cheer Work Log ##
-* **04/05/2022** - Working on gremlin graph quick start tutorial, encountering ssl.SSLCertificationError, and it only works with python 3.9 for some reason
+* **04/05/2022** - Working on gremlin graph quick start tutorial, encountering ssl.SSLCertificationError, and it only works with python 3.9 for some reason \n
 Traceback (most recent call last):
   File "/Users/samuelhenderson/Desktop/git-samples/azure-cosmos-db-graph-python-getting-started/connect.py", line 165, in <module>
     cleanup_graph(client)

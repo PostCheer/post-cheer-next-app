@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Post Cheer Work Log ##
+* https://www.cloudsponge.com/features/
+* **04/05/2022** - Working on gremlin graph quick start tutorial, encountering ssl.SSLCertificationError, and it only works with python 3.9 for some reason <br /><br />
+Traceback (most recent call last):
+  File "/Users/samuelhenderson/Desktop/git-samples/azure-cosmos-db-graph-python-getting-started/connect.py", line 165, in <module>
+    cleanup_graph(client)
+  File "/Users/samuelhenderson/Desktop/git-samples/azure-cosmos-db-graph-python-getting-started/connect.py", line 58, in cleanup_graph
+    callback = client.submitAsync(_gremlin_cleanup_graph)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/gremlin_python/driver/client.py", line 151, in submitAsync
+    return conn.write(message)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/gremlin_python/driver/connection.py", line 55, in write
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/gremlin_python/driver/connection.py", line 45, in connect
+    self._transport.connect(self._url, self._headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/gremlin_python/driver/tornado/transport.py", line 45, in connect
+    self._ws = self._loop.run_sync(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tornado/ioloop.py", line 576, in run_sync
+    return future_cell[0].result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 269, in run
+    stream = yield self.tcp_client.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tornado/gen.py", line 1141, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tornado/tcpclient.py", line 241, in connect
+    stream = yield stream.start_tls(False, ssl_options=ssl_options,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tornado/gen.py", line 1133, in run
+    value = future.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/tornado/iostream.py", line 1501, in _do_ssl_handshake
+    self.socket.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1122)
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* **04/04/2022** - Read through: https://docs.microsoft.com/en-us/azure/cosmos-db/graph/graph-introduction
+* **04/03/2022** - Read about AWS Lambda and do hello world tutorial. Start documenting work in README.md
+* **04/02/2022** - Finish applying AWS Activate and Microsoft for Startups
+* **04/01/2022** - Start apply to AWS Activate and Microsoft for Startups, edited about us section, fix postcards spelling, and add in construction
+* **03/31/2022** - Finish customizing page and came up with good mission statement.
+* **03/30/2022** - Add custom domain to AWS Amplify, and edit apge with brief description, about us, and contact us.
+* **03/29/2022** - Inital commit of next.js front end

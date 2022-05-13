@@ -4,26 +4,26 @@ import styles from '../styles/Home.module.css'
 import { useState } from "react";
 
 export default function Home() {
+  const [id, setId] = useState("");
+  const [price, setPrice] = useState("");
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("");
   const [message, setMessage] = useState("");
 
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("https://ynhh4b74td.execute-api.us-east-1.amazonaws.com", {
-        method: "POST",
+      let res = await fetch("https://evaxhugdkc.execute-api.us-east-1.amazonaws.com/items", {
+        method: "PUT",
         body: JSON.stringify({
+          id: id,
+          price: price,
           name: name,
-          email: email,
-          mobileNumber: mobileNumber,
         }),
       });
       let resJson = await res.json();
       if (res.status === 200) {
-        setName("");
-        setEmail("");
+        setId("");
+        setPrice("");
         setMessage("User created successfully");
       } else {
         setMessage("Some error occured");
@@ -52,21 +52,21 @@ export default function Home() {
         <form onSubmit={handleSubmit}>
         <input
           type="text"
+          value={id}
+          placeholder="ID"
+          onChange={(e) => setId(e.target.value)}
+        />
+        <input
+          type="text"
+          value={price}
+          placeholder="Price"
+          onChange={(e) => setPrice(e.target.value)}
+        />
+        <input
+          type="text"
           value={name}
           placeholder="Name"
           onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          type="text"
-          value={email}
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="text"
-          value={mobileNumber}
-          placeholder="Mobile Number"
-          onChange={(e) => setMobileNumber(e.target.value)}
         />
 
         <button type="submit">Create</button>

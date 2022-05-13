@@ -2,13 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const [id, setId] = useState("");
   const [price, setPrice] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const router = useRouter();
 
   let handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,6 +27,8 @@ export default function Home() {
         setId("");
         setPrice("");
         setMessage("User created successfully");
+        router.push("/orderPreview");
+
       } else {
         setMessage("Some error occured");
       }

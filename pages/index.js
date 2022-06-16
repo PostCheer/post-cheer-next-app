@@ -5,37 +5,6 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 export default function Home() {
-  const [id, setId] = useState("");
-  const [price, setPrice] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const router = useRouter();
-
-  let handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      let res = await fetch("https://evaxhugdkc.execute-api.us-east-1.amazonaws.com/items", {
-        method: "PUT",
-        body: JSON.stringify({
-          id: id,
-          price: price,
-          name: name,
-        }),
-      });
-      let resJson = await res.json();
-      if (res.status === 200) {
-        setId("");
-        setPrice("");
-        setMessage("User created successfully");
-        router.push("/orderPreview");
-
-      } else {
-        setMessage("Some error occured");
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
   return (
     <div className={styles.container}>
@@ -52,31 +21,6 @@ export default function Home() {
           We strive to help you connect with the people you appreciate by allowing you to send individualized
            postcards with a few clicks. We are currently working on bringing this experience to life.
         </p>
-
-        <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={id}
-          placeholder="ID"
-          onChange={(e) => setId(e.target.value)}
-        />
-        <input
-          type="text"
-          value={price}
-          placeholder="Price"
-          onChange={(e) => setPrice(e.target.value)}
-        />
-        <input
-          type="text"
-          value={name}
-          placeholder="Name"
-          onChange={(e) => setName(e.target.value)}
-        />
-
-        <button type="submit">Create</button>
-
-        <div className="message">{message ? <p>{message}</p> : null}</div>
-      </form>
 
         <h2 className={styles.subtitle}>About Us</h2>
         <p2 className={styles.description}>
